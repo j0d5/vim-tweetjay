@@ -21,29 +21,37 @@ let s:black        = { 'gui': '#171717', 'cterm': '234' }
 let s:lightBlack   = { 'gui': '#3A3A3A', 'cterm': '234' }
 let s:grey         = { 'gui': '#404040', 'cterm': '240' }
 let s:red          = { 'gui': '#e06c75', 'cterm': '161' }
-let s:green        = { 'gui': '#98c379', 'cterm': '114' }
-let s:yellow       = { 'gui': '#e5c07b', 'cterm': '180' }
-let s:blue         = { 'gui': '#61afef', 'cterm': '75'  }
+let s:green        = { 'gui': '#2F8A71', 'cterm': '114' }
+let s:yellow       = { 'gui': '#d0c81b', 'cterm': '180' }
+let s:blue         = { 'gui': '#365C8A', 'cterm': '75'  }
 let s:purple       = { 'gui': '#c678dd', 'cterm': '177' }
 let s:cyan         = { 'gui': '#56b6c2', 'cterm': '73'  }
-let s:white        = { 'gui': '#dcdfe4', 'cterm': '188' }
-let s:orange       = { 'gui': '#cb4b16', 'cterm': '100' }
+let s:white        = { 'gui': '#E6E6E7', 'cterm': '188' }
 let s:magenta      = { 'gui': '#FF00FF', 'cterm': '199' }
 let s:magenta_dark = { 'gui': '#C000C0', 'cterm': '198' }
-let s:violet       = { 'gui': '#6c71c4', 'cterm': '127' }
 " }}}
 
 " General color assignment {{{
-let s:fg           = s:white
+let s:fg           = { 'gui': s:white.gui, 'cterm': '255' }
 let s:bg           = s:black
 
-let s:background   = { 'gui': s:lightBlack.gui, 'cterm': s:black.cterm }
-let s:comment_fg   = { 'gui': '#058274', 'cterm': '241' }
+let s:grey_background   = { 'gui': '#2F3031', 'cterm': s:grey.cterm }
+
+let s:background   = s:grey_background
+let s:comment_fg   = { 'gui': '#808080', 'cterm': '241' }
+
+let s:identifier   = { 'gui': '#DAD8DC', 'cterm': '241' }
+let s:type         = { 'gui': '#157FFF', 'cterm': '241' }
+let s:function     = { 'gui': '#F5A273', 'cterm': '241' }
+let s:keyword      = { 'gui': '#FF00FF', 'cterm': '241' } " public class, extension
+let s:statement    = { 'gui': '#7F9FD1', 'cterm': '241' }
+let s:title        = { 'gui': '#157FFF', 'cterm': '241' }
+
 let s:gutter_bg    = { 'gui': '#282c34', 'cterm': '236' }
 let s:gutter_fg    = { 'gui': '#919baa', 'cterm': '247' }
 
 let s:cursor       = { 'gui': '#00FFF0', 'cterm': '237' }
-let s:cursor_line  = { 'gui': s:grey.gui, 'cterm': s:grey.cterm }
+let s:cursor_line  = { 'gui': '#1D1E1D', 'cterm': s:grey.cterm }
 let s:color_col    = { 'gui': s:grey.gui, 'cterm': s:grey.cterm }
 
 let s:match        = { 'gui': '#FD971F', 'cterm': '239' }
@@ -125,7 +133,7 @@ call s:h('SignColumn',     s:fg, '', '')
 
 call s:h('MatchParen',     s:background, s:match, '')
 call s:h('SpecialKey',     s:fg, '', '')
-call s:h('Title',          s:magenta_dark, '', 'bold')
+call s:h('Title',          s:title, '', 'bold')
 call s:h('WildMenu',       s:fg, '', '')
 " }}}
 
@@ -138,15 +146,15 @@ call s:h('Number',         s:yellow, '', '')
 call s:h('Boolean',        s:yellow, '', '')
 call s:h('Float',          s:yellow, '', '')
 
-call s:h('Identifier',     s:red, '', '')
-call s:h('Function',       s:blue, '', '')
-call s:h('Statement',      s:purple, '', '')
+call s:h('Identifier',     s:identifier, '', '')
+call s:h('Function',       s:function, '', '')
+call s:h('Statement',      s:statement, '', '')
 
 call s:h('Conditional',    s:purple, '', '')
 call s:h('Repeat',         s:purple, '', '')
 call s:h('Label',          s:purple, '', '')
 call s:h('Operator',       s:fg, '', '')
-call s:h('Keyword',        s:magenta, '', '')
+call s:h('Keyword',        s:keyword, '', '')
 call s:h('Exception',      s:purple, '', '')
 
 call s:h('PreProc',        s:yellow, '', '')
@@ -155,7 +163,7 @@ call s:h('Define',         s:purple, '', '')
 call s:h('Macro',          s:purple, '', '')
 call s:h('PreCondit',      s:yellow, '', '')
 
-call s:h('Type',           s:yellow, '', '')
+call s:h('Type',           s:type, '', '')
 call s:h('StorageClass',   s:yellow, '', '')
 call s:h('Structure',      s:yellow, '', '')
 call s:h('Typedef',        s:yellow, '', '')
