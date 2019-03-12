@@ -17,10 +17,10 @@ let g:colors_name  = 'tweetjay'
 let colors_name    = 'tweetjay'
 
 " General color definition {{{
-let s:black        = { 'gui': '#171717', 'cterm': '234' }
+let s:black        = { 'gui': '#171717', 'cterm': '232' }
 let s:lightBlack   = { 'gui': '#3A3A3A', 'cterm': '234' }
 let s:grey         = { 'gui': '#404040', 'cterm': '240' }
-let s:red          = { 'gui': '#e06c75', 'cterm': '161' }
+let s:red          = { 'gui': '#e06c75', 'cterm': '160' }
 let s:green        = { 'gui': '#2F8A71', 'cterm': '114' }
 let s:yellow       = { 'gui': '#d0c81b', 'cterm': '180' }
 let s:blue         = { 'gui': '#365C8A', 'cterm': '75'  }
@@ -35,23 +35,23 @@ let s:magenta_dark = { 'gui': '#C000C0', 'cterm': '198' }
 let s:fg           = { 'gui': s:white.gui, 'cterm': '255' }
 let s:bg           = s:black
 
-let s:grey_background   = { 'gui': '#2F3031', 'cterm': s:grey.cterm }
+let s:grey_background   = { 'gui': '#2F3031', 'cterm': s:black.cterm }
 
 let s:background   = s:grey_background
-let s:comment_fg   = { 'gui': '#808080', 'cterm': '241' }
+let s:comment_fg   = { 'gui': '#808080', 'cterm': '242' }
 
-let s:identifier   = { 'gui': '#DAD8DC', 'cterm': '241' }
-let s:type         = { 'gui': '#157FFF', 'cterm': '241' }
-let s:function     = { 'gui': '#F5A273', 'cterm': '241' }
-let s:keyword      = { 'gui': '#FF00FF', 'cterm': '241' } " public class, extension
-let s:statement    = { 'gui': '#7F9FD1', 'cterm': '241' }
-let s:title        = { 'gui': '#157FFF', 'cterm': '241' }
+let s:identifier   = { 'gui': '#DAD8DC', 'cterm': s:white.cterm }
+let s:type         = { 'gui': '#157FFF', 'cterm': s:blue.cterm }
+let s:function     = { 'gui': '#F5A273', 'cterm': '215' } " function calls
+let s:keyword      = { 'gui': '#FF00FF', 'cterm': s:magenta.cterm } " public class, extension
+let s:statement    = { 'gui': '#7F9FD1', 'cterm': '074' }
+let s:title        = { 'gui': '#157FFF', 'cterm': s:blue.cterm }
 
 let s:gutter_bg    = { 'gui': '#282c34', 'cterm': '236' }
 let s:gutter_fg    = { 'gui': '#919baa', 'cterm': '247' }
 
 let s:cursor       = { 'gui': '#00FFF0', 'cterm': '237' }
-let s:cursor_line  = { 'gui': '#1D1E1D', 'cterm': s:grey.cterm }
+let s:cursor_line  = { 'gui': '#1D1E1D', 'cterm': '235' }
 let s:color_col    = { 'gui': s:grey.gui, 'cterm': s:grey.cterm }
 
 let s:match        = { 'gui': '#FD971F', 'cterm': '239' }
