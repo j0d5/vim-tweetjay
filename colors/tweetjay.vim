@@ -23,9 +23,9 @@ let s:grey         = { 'gui': '#404040', 'cterm': '240' }
 let s:red          = { 'gui': '#e06c75', 'cterm': '160' }
 let s:green        = { 'gui': '#2F8A71', 'cterm': '114' }
 let s:yellow       = { 'gui': '#d0c81b', 'cterm': '180' }
-let s:blue         = { 'gui': '#365C8A', 'cterm': '75'  }
+let s:blue         = { 'gui': '#365C8A', 'cterm': '075' }
 let s:purple       = { 'gui': '#c678dd', 'cterm': '177' }
-let s:cyan         = { 'gui': '#56b6c2', 'cterm': '73'  }
+let s:cyan         = { 'gui': '#56b6c2', 'cterm': '073' }
 let s:white        = { 'gui': '#E6E6E7', 'cterm': '188' }
 let s:magenta      = { 'gui': '#FF00FF', 'cterm': '199' }
 let s:magenta_dark = { 'gui': '#C000C0', 'cterm': '198' }
@@ -71,7 +71,7 @@ function! s:h(group, fg, bg, attr)
   else
     exec 'hi ' . a:group . ' guibg=NONE ctermbg=NONE'
   endif
-  if a:attr !=! ''
+  if a:attr !=? ''
     exec 'hi ' . a:group . ' gui=' . a:attr . ' cterm=' . a:attr
   else
     exec 'hi ' . a:group . ' gui=NONE cterm=NONE'
