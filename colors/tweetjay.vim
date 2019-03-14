@@ -57,6 +57,12 @@ let s:color_col    = { 'gui': s:grey.gui, 'cterm': s:grey.cterm }
 let s:match        = { 'gui': '#FD971F', 'cterm': '239' }
 let s:selection    = { 'gui': '#505050', 'cterm': '239' }
 let s:vertsplit    = { 'gui': '#808080', 'cterm': '237' }
+
+let s:diff_add_bg    = { 'gui': '#275B42', 'cterm': '022' }
+let s:diff_change_bg = { 'gui': '#505050', 'cterm': '239' }
+let s:diff_delete    = { 'gui': '#D94E00', 'cterm': '188' }
+let s:diff_delete_bg = { 'gui': '#5D2B2F', 'cterm': '160' }
+let s:diff_text_bg   = { 'gui': '#309157', 'cterm': '071' }
 " }}}
 
 " Use this function to assign colors to a group all in one {{{
@@ -90,10 +96,10 @@ call s:h('CursorLine',     '', s:cursor_line, '')
 call s:h('LineNr',         s:gutter_fg, s:gutter_bg, '')
 call s:h('CursorLineNr',   s:fg, '', '')
 
-call s:h('DiffAdd',        s:green, '', '')
-call s:h('DiffChange',     s:yellow, '', '')
-call s:h('DiffDelete',     s:red, '', '')
-call s:h('DiffText',       s:blue, '', '')
+call s:h('DiffAdd',        s:white, s:diff_add_bg, '')
+call s:h('DiffChange',     s:white, s:diff_change_bg, '')
+call s:h('DiffDelete',     s:diff_delete, s:diff_delete_bg, '')
+call s:h('DiffText',       s:white, s:diff_text_bg, '')
 
 call s:h('IncSearch',      s:bg, s:yellow, '')
 call s:h('Search',         s:bg, s:yellow, '')
