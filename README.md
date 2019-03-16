@@ -16,6 +16,15 @@ To install using the fancy [vim-plug](https://github.com/junegunn/vim-plug) mana
 Plug 'tweetjay/vim-tweetjay'
 ```
 
+#### vimrc
+
+Add the following to your `vimrc`:
+
+```vim
+set background=dark
+colorscheme tweetjay
+```
+
 # License
 
 This theme is released unter the [MIT License][mit-license]
@@ -23,5 +32,5 @@ This theme is released unter the [MIT License][mit-license]
 
 [mit-license]:   https://opensource.org/licenses/MIT
 [author]:        https://github.com/tweetjay
-[avatar]: https://avatars3.githubusercontent.com/u/234182?s=40&v=4
+[avatar]:        https://avatars3.githubusercontent.com/u/234182?s=40&v=4
 [license-badge]: https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
