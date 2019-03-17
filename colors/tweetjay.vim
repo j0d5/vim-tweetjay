@@ -1,15 +1,14 @@
-"
+" {{{
 "   Name:        tweetjay
 "   Author:      tweetjay <tweetjay2@icloud.com>
-"   Url:         https://github.com/tweetjay/tweetjay-theme
+"   Url:         https://github.com/tweetjay/vim-tweetjay
 "   License:     The MIT License (MIT)
 "
 "   This theme is inspired by https://github.com/sonph/onehalf/tree/master/vim
 "   Code licensed under the MIT license
 "   http://zenorocha.mit-license.org
-"
+" }}}
 
-set background=dark
 highlight clear
 syntax reset
 
@@ -141,6 +140,10 @@ call s:h('MatchParen',     s:background, s:match, '')
 call s:h('SpecialKey',     s:fg, '', '')
 call s:h('Title',          s:title, '', 'bold')
 call s:h('WildMenu',       s:fg, '', '')
+" }}}
+
+" Set dark background {{{
+set background=dark
 " }}}
 
 " Syntax colors {{{

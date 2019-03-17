@@ -1,6 +1,8 @@
 # [![tweetjay][avatar]](https://github.com/tweetjay) scheme for vim
 
-> This is a Vim colorscheme
+> This is a dark Vim colorscheme
+
+It uses patterns from [onehalf](https://github.com/sonph/onehalf/tree/master/vim), which has nice ideas to set the color easily.
 
 ## Screenshot
 
@@ -21,7 +23,6 @@ Plug 'tweetjay/vim-tweetjay'
 Add the following to your `vimrc`:
 
 ```vim
-set background=dark
 colorscheme tweetjay
 ```
 
