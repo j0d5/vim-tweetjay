@@ -6,7 +6,7 @@ It uses patterns from [onehalf](https://github.com/sonph/onehalf/tree/master/vim
 
 ## Screenshot
 
-![Screenshot](images/Screenshot.png)
+![Screenshot](https://user-images.githubusercontent.com/234182/54509973-d49dd880-494b-11e9-833b-010463b6081b.jpg)
 
 ## Install
 
