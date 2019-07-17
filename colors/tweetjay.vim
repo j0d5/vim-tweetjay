@@ -224,24 +224,43 @@ hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 " }}}
 
 " Fix colors in neovim terminal buffers {{{
-  if has('nvim')
-    let g:terminal_color_0          = s:black.gui
-    let g:terminal_color_1          = s:red.gui
-    let g:terminal_color_2          = s:green.gui
-    let g:terminal_color_3          = s:yellow.gui
-    let g:terminal_color_4          = s:blue.gui
-    let g:terminal_color_5          = s:purple.gui
-    let g:terminal_color_6          = s:cyan.gui
-    let g:terminal_color_7          = s:white.gui
-    let g:terminal_color_8          = s:black.gui
-    let g:terminal_color_9          = s:red.gui
-    let g:terminal_color_10         = s:green.gui
-    let g:terminal_color_11         = s:yellow.gui
-    let g:terminal_color_12         = s:blue.gui
-    let g:terminal_color_13         = s:purple.gui
-    let g:terminal_color_14         = s:cyan.gui
-    let g:terminal_color_15         = s:white.gui
-    let g:terminal_color_background = s:bg.gui
-    let g:terminal_color_foreground = s:fg.gui
-  endif
+if has('nvim')
+  let g:terminal_color_0          = s:black.gui
+  let g:terminal_color_1          = s:red.gui
+  let g:terminal_color_2          = s:green.gui
+  let g:terminal_color_3          = s:yellow.gui
+  let g:terminal_color_4          = s:blue.gui
+  let g:terminal_color_5          = s:purple.gui
+  let g:terminal_color_6          = s:cyan.gui
+  let g:terminal_color_7          = s:white.gui
+  let g:terminal_color_8          = s:black.gui
+  let g:terminal_color_9          = s:red.gui
+  let g:terminal_color_10         = s:green.gui
+  let g:terminal_color_11         = s:yellow.gui
+  let g:terminal_color_12         = s:blue.gui
+  let g:terminal_color_13         = s:purple.gui
+  let g:terminal_color_14         = s:cyan.gui
+  let g:terminal_color_15         = s:white.gui
+  let g:terminal_color_background = s:bg.gui
+  let g:terminal_color_foreground = s:fg.gui
+elseif has('terminal')
+  let g:terminal_ansi_colors = [
+        \ '#090300',
+        \ '#db2d20',
+        \ '#01a252',
+        \ '#fded02',
+        \ '#01a0e4',
+        \ '#a16a94',
+        \ '#b5e4f4',
+        \ '#a5a2a2',
+        \ '#5c5855',
+        \ '#db2d20',
+        \ '#01a252',
+        \ '#fded02',
+        \ '#01a0e4',
+        \ '#a16a94',
+        \ '#b5e4f4',
+        \ '#f7f7f7',
+        \ ]
+endif
 " }}}
