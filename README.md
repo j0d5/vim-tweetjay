@@ -2,7 +2,8 @@
 
 > This is a dark Vim colorscheme
 
-It uses patterns from [onehalf](https://github.com/sonph/onehalf/tree/master/vim), which has nice ideas to set the color easily.
+It uses patterns from [onehalf](https://github.com/sonph/onehalf/tree/master/vim),
+which has nice ideas to set the color easily.
 
 ## Screenshot
 
@@ -10,15 +11,16 @@ It uses patterns from [onehalf](https://github.com/sonph/onehalf/tree/master/vim
 
 ## Install
 
-#### vim-plug
+### vim-plug
 
-To install using the fancy [vim-plug](https://github.com/junegunn/vim-plug) manager, add the following lines to the plugin section in your `vimrc`:
+To install using the fancy [vim-plug](https://github.com/junegunn/vim-plug)
+manager, add the following lines to the plugin section in your `vimrc`:
 
 ```vim
 Plug 'tweetjay/vim-tweetjay'
 ```
 
-#### vimrc
+### vimrc
 
 Add the following to your `vimrc`:
 
@@ -26,7 +28,7 @@ Add the following to your `vimrc`:
 colorscheme tweetjay
 ```
 
-# License
+## License
 
 This theme is released unter the [MIT License][mit-license]
 © [Johannes Steudle][author]
