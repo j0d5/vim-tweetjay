@@ -25,14 +25,14 @@ let s:yellow       = { 'gui': '#d0c81b', 'cterm': '180' }
 let s:blue         = { 'gui': '#365C8A', 'cterm': '075' }
 let s:purple       = { 'gui': '#c678dd', 'cterm': '177' }
 let s:cyan         = { 'gui': '#56b6c2', 'cterm': '073' }
-let s:white        = { 'gui': '#E6E6E7', 'cterm': '188' }
+let s:white        = { 'gui': '#E3E3E7', 'cterm': '188' }
 let s:magenta      = { 'gui': '#FF00FF', 'cterm': '199' }
 let s:magenta_dark = { 'gui': '#C000C0', 'cterm': '198' }
 " }}}
 
 " General color assignment {{{
 let s:fg           = { 'gui': s:white.gui, 'cterm': '255' }
-let s:bg           = s:black
+let s:bg           = { 'gui': '#353D48', 'cterm': '255' }
 
 let s:grey_background   = { 'gui': '#2F3031', 'cterm': s:black.cterm }
 
