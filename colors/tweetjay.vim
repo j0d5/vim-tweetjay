@@ -32,7 +32,7 @@ let s:magenta_dark = { 'gui': '#C000C0', 'cterm': '198' }
 
 " General color assignment {{{
 let s:fg           = { 'gui': s:white.gui, 'cterm': '255' }
-let s:bg           = { 'gui': '#353D48', 'cterm': '255' }
+let s:bg           = { 'gui': '#353D48', 'cterm': '236' }
 
 let s:grey_background   = { 'gui': '#2F3031', 'cterm': s:black.cterm }
 
